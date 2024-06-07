@@ -1,0 +1,31 @@
+# File path to API endpoints json file within docker container, DO NOT MODIFY
+API_ENDPOINTS_FILE = '/usr/src/app/api_endpoints.json'
+
+# Globus app client ID and secret
+# Used by HuBMAP commons AuthHelper
+GLOBUS_APP_ID = ''
+GLOBUS_APP_SECRET = ''
+
+# Globus Sennet-Read group UUID
+# Used for file service
+GLOBUS_SENNET_READ_GROUP_UUID = '5777527e-ec11-11e8-ab41-0af86edb4424'
+
+# URL for talking to UUID API (default value used for docker deployment, no token needed)
+# Don't use localhost since uuid-api is running on a different container
+# Point to remote URL for non-docker development
+# Works regardless of the trailing slash
+# Use 'http://hubmap-auth:9999' for localhost docker deployment
+UUID_API_URL = 'http://uuid-api:8080'
+
+# URL base to entity-api for getting file access level of a given dataset UUID
+# Default value works for docker localhost
+# Works regardless the trailing slash /
+# Use 'http://hubmap-auth:3333' for localhost docker deployment
+ENTITY_API_URL = 'http://entity-api:8080'
+
+# The maximum integer number of entries in the cache queue
+CACHE_MAXSIZE = 1024
+# Expire the cache after the time-to-live (seconds)
+CACHE_TTL = 7200
+
+

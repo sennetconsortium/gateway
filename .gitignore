@@ -1,0 +1,32 @@
+# __pycache__ directories in any path
+**/__pycache__
+
+**/.DS_Store
+
+BUILD
+
+# the copied
+senent-auth/BUILD
+sennet-auth/VERSION
+sennet-auth/src/BUILD
+sennet-auth/src/VERSION
+
+**/.DS_Store
+
+# log files in any path
+**/*.log
+
+# Rotated log files
+**/*.log*
+
+# sennet-auth app.cfg
+sennet-auth/src/instance/app.cfg
+
+#ignore PyCharm files
+.idea/
+venv
+
+#ignore Eclipse files
+.project
+.pydevproject
+gateway.code-workspace

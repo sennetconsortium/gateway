@@ -1,0 +1,34 @@
+{
+  "ingest.apisennetconsortium.org": [
+       {
+      "method": "GET",
+      "endpoint": "/",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/favicon.ico",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/status",
+      "auth": false
+    },
+    {
+      "method": "POST",
+      "endpoint": "/assaytype",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/assaytype/<*>",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/assaytype/metadata/<*>",
+      "auth": false
+    }
+  ]
+}

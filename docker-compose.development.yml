@@ -1,0 +1,36 @@
+version: "3.7"
+
+services:
+  
+  sennet-auth:
+    build: 
+      context: ./sennet-auth
+      # Uncomment if tesitng against a specific branch of commons other than the PyPI package
+      # Will also need to use the 'git+https://github.com/hubmapconsortium/commons.git@${COMMONS_BRANCH}#egg=hubmap-commons'
+      # in src/requirements.txt accordingly
+      args:
+        # The commons github branch to be used during image build (default to main if not set or null)
+        - COMMONS_BRANCH=${COMMONS_BRANCH:-main}
+    # Build the image with name and tag
+    # Exit with an error message containing err if unset or empty in the environment
+    image: sennet/sennet-auth:${HUBMAP_AUTH_VERSION:?err}
+    environment:
+      - DEPLOY_MODE=dev
+    ports:
+      # Proxy pass to workspaces REST API on PSC VM
+      - "7777:7777"
+      # spatial-api
+      - "8888:8888"
+    volumes:
+      # Mount the VERSION file and BUILD file
+      - "./VERSION:/usr/src/app/VERSION"
+      - "./BUILD:/usr/src/app/BUILD"
+      # Mount the source code to container
+      - "./sennet-auth/src/:/usr/src/app/src"
+      # Mount conf.d-test to the nginx conf.d on container
+      - "./nginx/conf.d-dev:/etc/nginx/conf.d"
+      # Mount ssl certificates from host to container
+      - "/etc/letsencrypt:/etc/letsencrypt"
+      # Mount the API endpoints json file for API endpoints lookup
+      - "./api_endpoints.dev.json:/usr/src/app/api_endpoints.json"
+      
