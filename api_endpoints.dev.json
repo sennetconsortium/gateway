@@ -13,22 +13,34 @@
     {
       "method": "GET",
       "endpoint": "/admin/jobs",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
+      ]
     },
     {
       "method": "GET",
       "endpoint": "/admin/jobs/<*>",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
+      ]
     },
     {
       "method": "DELETE",
       "endpoint": "/admin/jobs/<*>",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
+      ]
     },
     {
       "method": "PUT",
       "endpoint": "/admin/jobs/<*>/cancel",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
+      ]
     },
     {
       "method": "POST",
@@ -48,7 +60,10 @@
     {
       "method": "POST",
       "endpoint": "/collections/attributes",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "GET",
@@ -63,22 +78,34 @@
     {
       "method": "POST",
       "endpoint": "/datasets",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "PUT",
       "endpoint": "/datasets",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "PUT",
       "endpoint": "/datasets/bulk/submit",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
+      ]
     },
     {
       "method": "POST",
       "endpoint": "/datasets/components",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "GET",
@@ -103,12 +130,18 @@
     {
       "method": "PUT",
       "endpoint": "/datasets/<*>/publish",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
+      ]
     },
     {
       "method": "PUT",
       "endpoint": "/datasets/<*>/submit",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
+      ]
     },
     {
       "method": "POST",
@@ -123,12 +156,18 @@
     {
       "method": "POST",
       "endpoint": "/file-commit",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "POST",
       "endpoint": "/file-upload",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "GET",
@@ -138,7 +177,10 @@
     {
       "method": "DELETE",
       "endpoint": "/jobs/flush",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "GET",
@@ -148,12 +190,18 @@
     {
       "method": "DELETE",
       "endpoint": "/jobs/<*>",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "PUT",
       "endpoint": "/jobs/<*>/cancel",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "GET",
@@ -168,12 +216,18 @@
     {
       "method": "POST",
       "endpoint": "/metadata/register",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "POST",
       "endpoint": "/metadata/validate",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "GET",
@@ -198,27 +252,42 @@
     {
       "method": "PUT",
       "endpoint": "/reload-assaytypes",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
+      ]
     },
     {
       "method": "POST",
       "endpoint": "/samples/bulk/register",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "POST",
       "endpoint": "/samples/bulk/validate",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "POST",
       "endpoint": "/sources/bulk/register",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "POST",
       "endpoint": "/sources/bulk/validate",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "GET",
@@ -228,7 +297,10 @@
     {
       "method": "POST",
       "endpoint": "/uploads",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "GET",
@@ -243,17 +315,26 @@
     {
       "method": "PUT",
       "endpoint": "/uploads/<*>/reorganize",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
+      ]
     },
     {
       "method": "PUT",
       "endpoint": "/uploads/<*>/submit",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "PUT",
       "endpoint": "/uploads/<*>/validate",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "GET",
@@ -263,7 +344,10 @@
     {
       "method": "DELETE",
       "endpoint": "/vitessce/<*>/cache",
-      "auth": true
+      "auth": true,
+      "groups": [
+        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
+      ]
     }
   ]
 }
