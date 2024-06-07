@@ -12,8 +12,23 @@
     },
     {
       "method": "GET",
-      "endpoint": "/status",
-      "auth": false
+      "endpoint": "/admin/jobs",
+      "auth": true
+    },
+    {
+      "method": "GET",
+      "endpoint": "/admin/jobs/<*>",
+      "auth": true
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/admin/jobs/<*>",
+      "auth": true
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/admin/jobs/<*>/cancel",
+      "auth": true
     },
     {
       "method": "POST",
@@ -29,6 +44,226 @@
       "method": "GET",
       "endpoint": "/assaytype/metadata/<*>",
       "auth": false
+    },
+    {
+      "method": "POST",
+      "endpoint": "/collections/attributes",
+      "auth": true
+    },
+    {
+      "method": "GET",
+      "endpoint": "/data-ingest-board-login",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/data-ingest-board-logout",
+      "auth": false
+    },
+    {
+      "method": "POST",
+      "endpoint": "/datasets",
+      "auth": true
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/datasets",
+      "auth": true
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/datasets/bulk/submit",
+      "auth": true
+    },
+    {
+      "method": "POST",
+      "endpoint": "/datasets/components",
+      "auth": true
+    },
+    {
+      "method": "GET",
+      "endpoint": "/datasets/data-status",
+      "auth": false
+    },
+    {
+      "method": "POST",
+      "endpoint": "/datasets/file-system-abs-path",
+      "auth": false
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/datasets/status",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/datasets/<*>/file-system-abs-path",
+      "auth": false
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/datasets/<*>/publish",
+      "auth": true
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/datasets/<*>/submit",
+      "auth": true
+    },
+    {
+      "method": "POST",
+      "endpoint": "/entities/file-system-rel-path",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>",
+      "auth": false
+    },
+    {
+      "method": "POST",
+      "endpoint": "/file-commit",
+      "auth": true
+    },
+    {
+      "method": "POST",
+      "endpoint": "/file-upload",
+      "auth": true
+    },
+    {
+      "method": "GET",
+      "endpoint": "/jobs",
+      "auth": false
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/jobs/flush",
+      "auth": true
+    },
+    {
+      "method": "GET",
+      "endpoint": "/jobs/<*>",
+      "auth": false
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/jobs/<*>",
+      "auth": true
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/jobs/<*>/cancel",
+      "auth": true
+    },
+    {
+      "method": "GET",
+      "endpoint": "/login",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/logout",
+      "auth": false
+    },
+    {
+      "method": "POST",
+      "endpoint": "/metadata/register",
+      "auth": true
+    },
+    {
+      "method": "POST",
+      "endpoint": "/metadata/validate",
+      "auth": true
+    },
+    {
+      "method": "GET",
+      "endpoint": "/privs",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/privs/has-data-admin",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/privs/user-write-groups",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/privs/<*>/has-write",
+      "auth": false
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/reload-assaytypes",
+      "auth": true
+    },
+    {
+      "method": "POST",
+      "endpoint": "/samples/bulk/register",
+      "auth": true
+    },
+    {
+      "method": "POST",
+      "endpoint": "/samples/bulk/validate",
+      "auth": true
+    },
+    {
+      "method": "POST",
+      "endpoint": "/sources/bulk/register",
+      "auth": true
+    },
+    {
+      "method": "POST",
+      "endpoint": "/sources/bulk/validate",
+      "auth": true
+    },
+    {
+      "method": "GET",
+      "endpoint": "/status",
+      "auth": false
+    },
+    {
+      "method": "POST",
+      "endpoint": "/uploads",
+      "auth": true
+    },
+    {
+      "method": "GET",
+      "endpoint": "/uploads/data-status",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/uploads/<*>/file-system-abs-path",
+      "auth": false
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/uploads/<*>/reorganize",
+      "auth": true
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/uploads/<*>/submit",
+      "auth": true
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/uploads/<*>/validate",
+      "auth": true
+    },
+    {
+      "method": "GET",
+      "endpoint": "/vitessce/<*>",
+      "auth": false
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/vitessce/<*>/cache",
+      "auth": true
     }
   ]
 }
