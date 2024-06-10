@@ -3,7 +3,7 @@ version: "3.7"
 # Will use the hostname when talking between services on the same network
 services:
   
-  hubmap-auth:
+  sennet-auth:
     hostname: sennet-auth
     container_name: sennet-auth
     # Avoid accidentally creating zombie processes
@@ -16,7 +16,7 @@ services:
       - HOST_UID=${HOST_UID:-1002}
     # Map host machine port 80, 443, and 8443 to container ports
     # Only root can listen on ports below 1024, we use higher-numbered ports
-    # since nginx is running under non-root user hubmap
+    # since nginx is running under non-root user codcc
     ports:
       - "80:8080"
       - "443:4430"
