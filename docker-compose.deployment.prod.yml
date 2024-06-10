@@ -4,7 +4,7 @@ services:
   
   sennet-auth:
     # Use the published image and tag from DockerHub
-    image: sennet/sennet-auth:${HUBMAP_AUTH_VERSION:?err}
+    image: sennet/sennet-auth:${SENNET_AUTH_VERSION:?err}
     environment:
       - DEPLOY_MODE=prod
     ports:
