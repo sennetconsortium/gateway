@@ -29,7 +29,7 @@ services:
       retries: 3
       start_period: 40s
     networks:
-      - gateway_sennet
+      - sennet_docker_network
     volumes:
       # Make the uwsgi/nginx log files generated on container available through from host
       - "./hubmap-auth/log:/usr/src/app/log"
@@ -38,5 +38,5 @@ services:
 
 networks:
   # This is the network created by gateway to enable communicaton between multiple docker-compose projects
-  gateway_sennet:
+  sennet_docker_network:
     external: true
