@@ -18,7 +18,7 @@ cd docker
 ./docker-development.sh [check|config|build|start|stop|down]
 ```
 
-## Docker build for deployment on PROD
+## Docker deployment on PROD
 
 ```
 cd docker

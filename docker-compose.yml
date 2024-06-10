@@ -4,16 +4,16 @@ version: "3.7"
 services:
   
   hubmap-auth:
-    hostname: hubmap-auth
-    container_name: hubmap-auth
+    hostname: sennet-auth
+    container_name: sennet-auth
     # Avoid accidentally creating zombie processes
     init: true
     # Specifying a restart policy to avoid downtime
     restart: always
     environment:
       # UID and GID 1001 to match the hive user by default
-      - HOST_GID=${HOST_GID:-1001}
-      - HOST_UID=${HOST_UID:-1001}
+      - HOST_GID=${HOST_GID:-1002}
+      - HOST_UID=${HOST_UID:-1002}
     # Map host machine port 80, 443, and 8443 to container ports
     # Only root can listen on ports below 1024, we use higher-numbered ports
     # since nginx is running under non-root user hubmap
@@ -29,7 +29,7 @@ services:
       retries: 3
       start_period: 40s
     networks:
-      - gateway_hubmap
+      - gateway_sennet
     volumes:
       # Make the uwsgi/nginx log files generated on container available through from host
       - "./hubmap-auth/log:/usr/src/app/log"
@@ -38,5 +38,5 @@ services:
 
 networks:
   # This is the network created by gateway to enable communicaton between multiple docker-compose projects
-  gateway_hubmap:
+  gateway_sennet:
     external: true
