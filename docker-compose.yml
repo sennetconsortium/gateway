@@ -32,7 +32,7 @@ services:
       - sennet_docker_network
     volumes:
       # Make the uwsgi/nginx log files generated on container available through from host
-      - "./hubmap-auth/log:/usr/src/app/log"
+      - "./sennet-auth/log:/usr/src/app/log"
       # favicon.ico and portal/ingest UI maintenance page
       - "./nginx/html:/usr/share/nginx/html"
 
