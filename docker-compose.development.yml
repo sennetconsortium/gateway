@@ -28,4 +28,6 @@ services:
       - "/etc/letsencrypt:/etc/letsencrypt"
       # Mount the API endpoints json file for API endpoints lookup
       - "./api_endpoints.dev.json:/usr/src/app/api_endpoints.json"
+      # Will be removed
+      - "/codcc/dev-test/data-dev:/codcc/dev-test/data-dev"
       
