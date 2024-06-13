@@ -646,8 +646,8 @@ def get_entity_uuid_by_file_uuid(uuid):
         raise requests.exceptions.RequestException(response.text)
 
     # Further check the entity type registered with uuid-api to determine if it's AVR or not
-    # Make the call against the /hmuuid endpoint
-    uuid_api_entity_url = f"{app.config['UUID_API_URL']}/hmuuid/{entity_uuid}"
+    # Make the call against the /uuid endpoint
+    uuid_api_entity_url = f"{app.config['UUID_API_URL']}/uuid/{entity_uuid}"
 
     # Function cache to improve performance
     response = make_api_request_get(uuid_api_entity_url)
