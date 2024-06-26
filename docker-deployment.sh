@@ -43,8 +43,8 @@ function get_dir_of_this_script () {
 
 
 
-if [[ "$2" != "start" && "$2" != "stop" && "$2" != "down" ]]; then
-    echo "Unknown command '$2', specify one of the following: start|stop|down"
+if [[ "$1" != "start" && "$1" != "stop" && "$1" != "down" ]]; then
+    echo "Unknown command '$1', specify one of the following: start|stop|down"
 else
     # Always show the script dir
     get_dir_of_this_script
@@ -58,12 +58,12 @@ else
     # Print empty line
     echo
 
-    if [ "$2" = "start" ]; then
-        docker-compose -f docker-compose.yml -f docker-compose.deployment.$1.yml -p gateway up -d
-    elif [ "$2" = "stop" ]; then
-        docker-compose -f docker-compose.yml -f docker-compose.deployment.$1.yml -p gateway stop
-    elif [ "$2" = "down" ]; then
-        docker-compose -f docker-compose.yml -f docker-compose.deployment.$1.yml -p gateway down
+    if [ "$1" = "start" ]; then
+        docker-compose -f docker-compose.yml -f docker-compose.deployment.yml -p gateway up -d
+    elif [ "$1" = "stop" ]; then
+        docker-compose -f docker-compose.yml -f docker-compose.deployment.yml -p gateway stop
+    elif [ "$1" = "down" ]; then
+        docker-compose -f docker-compose.yml -f docker-compose.deployment.yml -p gateway down
     fi
 fi
 
