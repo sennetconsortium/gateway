@@ -58,14 +58,6 @@
       "auth": false
     },
     {
-      "method": "POST",
-      "endpoint": "/collections/attributes",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
-    },
-    {
       "method": "GET",
       "endpoint": "/data-ingest-board-login",
       "auth": false
@@ -335,6 +327,11 @@
       "groups": [
         "51155194-09e5-11ed-a1a7-39992a34a522"
       ]
+    },
+    {
+      "method": "POST",
+      "endpoint": "/validate-tsv",
+      "auth": false
     },
     {
       "method": "GET",
