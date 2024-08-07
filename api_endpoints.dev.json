@@ -223,6 +223,14 @@
     },
     {
       "method": "GET",
+      "endpoint": "/metadata/data-provider-groups",
+      "auth": true,
+       "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
+    },
+    {
+      "method": "GET",
       "endpoint": "/privs",
       "auth": false
     },
