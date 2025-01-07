@@ -110,7 +110,10 @@
     {
       "method": "GET",
       "endpoint": "/datasets/data-status",
-      "auth": false
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "POST",
@@ -329,7 +332,10 @@
     {
       "method": "GET",
       "endpoint": "/uploads/data-status",
-      "auth": false
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "GET",
