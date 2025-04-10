@@ -120,6 +120,11 @@
       "endpoint": "/datasets/file-system-abs-path",
       "auth": false
     },
+     {
+      "method": "GET",
+      "endpoint": "/datasets/sankey_data",
+      "auth": false
+    },
     {
       "method": "PUT",
       "endpoint": "/datasets/status",
