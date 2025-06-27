@@ -1,5 +1,5 @@
 {
-  "ingest.api.sennetconsortium.org": [
+  "ingest-api.dev.sennetconsortium.org": [
     {
       "method": "GET",
       "endpoint": "/",
@@ -120,7 +120,7 @@
       "endpoint": "/datasets/file-system-abs-path",
       "auth": false
     },
-     {
+    {
       "method": "GET",
       "endpoint": "/datasets/sankey_data",
       "auth": false
@@ -129,6 +129,14 @@
       "method": "PUT",
       "endpoint": "/datasets/status",
       "auth": false
+    },
+    {
+      "method": "POST",
+      "endpoint": "/datasets/validate",
+      "auth": true,
+      "groups": [
+        "51155194-09e5-11ed-a1a7-39992a34a522"
+      ]
     },
     {
       "method": "GET",
@@ -241,7 +249,7 @@
       "method": "GET",
       "endpoint": "/metadata/data-provider-groups",
       "auth": true,
-       "groups": [
+      "groups": [
         "51155194-09e5-11ed-a1a7-39992a34a522"
       ]
     },
@@ -249,7 +257,7 @@
       "method": "GET",
       "endpoint": "/metadata/provenance-metadata/<*>",
       "auth": false,
-       "groups": [
+      "groups": [
         "51155194-09e5-11ed-a1a7-39992a34a522"
       ]
     },
@@ -364,8 +372,8 @@
       ]
     },
     {
-      "method": "PUT",
-      "endpoint": "/uploads/<*>/validate",
+      "method": "POST",
+      "endpoint": "/uploads/validate",
       "auth": true,
       "groups": [
         "51155194-09e5-11ed-a1a7-39992a34a522"
