@@ -1,5 +1,5 @@
 {
-  "ingest-api.dev.sennetconsortium.org": [
+  "ingest.api.sennetconsortium.org": [
     {
       "method": "GET",
       "endpoint": "/",
