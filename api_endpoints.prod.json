@@ -304,6 +304,14 @@
     },
     {
       "method": "PUT",
+      "endpoint": "/publications/<*>/submit",
+      "auth": true,
+      "groups": [
+        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
+      ]
+    },
+    {
+      "method": "PUT",
       "endpoint": "/reload-assaytypes",
       "auth": true,
       "groups": [
