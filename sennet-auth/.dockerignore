@@ -9,6 +9,7 @@ Dockerfile
 
 # Ignore README
 README.md
+log/README.md
 
 # Ignore log
 log

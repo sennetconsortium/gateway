@@ -78,11 +78,11 @@ else
         if [ -f "sennet-auth/VERSION" ]; then
             rm -rf sennet-auth/VERSION
         fi
-        
+
         if [ -f "sennet-auth/BUILD" ]; then
             rm -rf sennet-auth/BUILD
         fi
-        
+
         # Copy over the VERSION and BUILD files
         cp ./VERSION sennet-auth
         cp ./BUILD sennet-auth
