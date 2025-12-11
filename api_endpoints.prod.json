@@ -358,12 +358,12 @@
     {
       "method": "POST",
       "endpoint": "/transfers",
-      "auth": true
+      "auth": false
     },
     {
       "method": "GET",
       "endpoint": "/transfers/endpoints",
-      "auth": true
+      "auth": false
     },
     {
       "method": "POST",
