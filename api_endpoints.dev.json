@@ -357,6 +357,16 @@
     },
     {
       "method": "POST",
+      "endpoint": "/transfers",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/transfers/endpoints",
+      "auth": false
+    },
+    {
+      "method": "POST",
       "endpoint": "/uploads",
       "auth": true,
       "groups": [
