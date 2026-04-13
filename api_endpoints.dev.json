@@ -335,6 +335,16 @@
       ]
     },
     {
+      "method": "GET",
+      "endpoint": "/senotype-search-login",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/senotype-search-logout",
+      "auth": false
+    },
+    {
       "method": "POST",
       "endpoint": "/sources/bulk/register",
       "auth": true,
