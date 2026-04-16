@@ -286,7 +286,7 @@
     },
     {
       "method": "GET",
-      "endpoint": "/privs/has-senotype-write",
+      "endpoint": "/privs/has-senotype-edit",
       "auth": false
     },
     {
