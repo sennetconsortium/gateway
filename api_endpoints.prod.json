@@ -341,12 +341,12 @@
     },
     {
       "method": "GET",
-      "endpoint": "/senotype-search-login",
+      "endpoint": "/senotype-library-login",
       "auth": false
     },
     {
       "method": "GET",
-      "endpoint": "/senotype-search-logout",
+      "endpoint": "/senotype-library-logout",
       "auth": false
     },
     {
