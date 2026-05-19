@@ -279,6 +279,11 @@
       "endpoint": "/privs",
       "auth": false
     },
+     {
+      "method": "GET",
+      "endpoint": "/privs/senotype",
+      "auth": false
+    },
     {
       "method": "GET",
       "endpoint": "/privs/has-data-admin",
@@ -378,6 +383,11 @@
     {
       "method": "GET",
       "endpoint": "/status",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/token-introspect",
       "auth": false
     },
     {
