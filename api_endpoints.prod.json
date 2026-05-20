@@ -279,24 +279,14 @@
       "endpoint": "/privs",
       "auth": false
     },
+     {
+      "method": "GET",
+      "endpoint": "/privs/senotype",
+      "auth": false
+    },
     {
       "method": "GET",
       "endpoint": "/privs/has-data-admin",
-      "auth": false
-    },
-    {
-      "method": "GET",
-      "endpoint": "/privs/has-senotype-edit",
-      "auth": false
-    },
-    {
-      "method": "GET",
-      "endpoint": "/privs/has-senotype-curate",
-      "auth": false
-    },
-    {
-      "method": "GET",
-      "endpoint": "/privs/has-senotype-publish",
       "auth": false
     },
     {
@@ -378,6 +368,11 @@
     {
       "method": "GET",
       "endpoint": "/status",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/token-introspect",
       "auth": false
     },
     {

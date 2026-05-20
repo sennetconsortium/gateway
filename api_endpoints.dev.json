@@ -291,21 +291,6 @@
     },
     {
       "method": "GET",
-      "endpoint": "/privs/has-senotype-edit",
-      "auth": false
-    },
-    {
-      "method": "GET",
-      "endpoint": "/privs/has-senotype-curate",
-      "auth": false
-    },
-    {
-      "method": "GET",
-      "endpoint": "/privs/has-senotype-publish",
-      "auth": false
-    },
-    {
-      "method": "GET",
       "endpoint": "/privs/user-write-groups",
       "auth": false
     },
