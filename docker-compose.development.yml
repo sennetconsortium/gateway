@@ -1,7 +1,7 @@
 services:
 
   sennet-auth:
-    build: 
+    build:
       context: ./sennet-auth
       # Uncomment if tesitng against a specific branch of commons other than the PyPI package
       # Will also need to use the 'git+https://github.com/hubmapconsortium/commons.git@${COMMONS_BRANCH}#egg=hubmap-commons'
@@ -27,6 +27,13 @@ services:
       # Mount ssl certificates from host to container
       - "/etc/letsencrypt:/etc/letsencrypt"
       # Mount the API endpoints json file for API endpoints lookup
-      - "./api_endpoints.dev.json:/usr/src/app/api_endpoints.json"
-      # Will be removed
-      - "/codcc/dev-test/data-dev:/codcc/dev-test/data-dev"
+      - "./api_endpoints.localhost.json:/usr/src/app/api_endpoints.json"
+    healthcheck:
+      # Replaces base healthcheck - checks localhost:7777 for entity-api instead of localhost:8080 for /
+      test: [ "CMD", "curl", "--fail", "http://localhost:7777/status.json" ]
+      interval: 12h # Set long on localhost to avoid logging that interferes with development
+      timeout: 15s
+      retries: 5
+      start_period: 30s
+    networks:
+      - sennet_docker_network # Docker network defined in docker-compose.yml

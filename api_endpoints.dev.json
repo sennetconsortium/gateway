@@ -2,451 +2,832 @@
   "ingest-api.dev.sennetconsortium.org": [
     {
       "method": "GET",
-      "endpoint": "/",
-      "auth": false
+      "endpoint": "/"
     },
     {
       "method": "GET",
-      "endpoint": "/favicon.ico",
-      "auth": false
+      "endpoint": "/favicon.ico"
     },
     {
       "method": "GET",
       "endpoint": "/admin/jobs",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "GET",
       "endpoint": "/admin/jobs/<*>",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "DELETE",
       "endpoint": "/admin/jobs/<*>",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "PUT",
       "endpoint": "/admin/jobs/<*>/cancel",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "POST",
-      "endpoint": "/assaytype",
-      "auth": false
+      "endpoint": "/assaytype"
     },
     {
       "method": "GET",
-      "endpoint": "/assaytype/<*>",
-      "auth": false
+      "endpoint": "/assaytype/<*>"
     },
     {
       "method": "GET",
-      "endpoint": "/assaytype/metadata/<*>",
-      "auth": false
+      "endpoint": "/assaytype/metadata/<*>"
     },
     {
       "method": "PUT",
       "endpoint": "/collections/<*>/register-doi",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "GET",
-      "endpoint": "/data-ingest-board-login",
-      "auth": false
+      "endpoint": "/data-ingest-board-login"
     },
     {
       "method": "GET",
-      "endpoint": "/data-ingest-board-logout",
-      "auth": false
+      "endpoint": "/data-ingest-board-logout"
     },
     {
       "method": "POST",
       "endpoint": "/datasets",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "PUT",
       "endpoint": "/datasets",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "PUT",
       "endpoint": "/datasets/bulk/submit",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "POST",
       "endpoint": "/datasets/components",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "GET",
       "endpoint": "/datasets/data-status",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "POST",
-      "endpoint": "/datasets/file-system-abs-path",
-      "auth": false
+      "endpoint": "/datasets/file-system-abs-path"
     },
     {
       "method": "GET",
-      "endpoint": "/datasets/sankey_data",
-      "auth": false
+      "endpoint": "/datasets/sankey_data"
     },
     {
       "method": "PUT",
-      "endpoint": "/datasets/status",
-      "auth": false
+      "endpoint": "/datasets/status"
     },
     {
       "method": "POST",
       "endpoint": "/datasets/validate",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "GET",
-      "endpoint": "/datasets/<*>/file-system-abs-path",
-      "auth": false
+      "endpoint": "/datasets/<*>/file-system-abs-path"
     },
     {
       "method": "PUT",
       "endpoint": "/datasets/<*>/publish",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "PUT",
       "endpoint": "/datasets/<*>/submit",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "POST",
-      "endpoint": "/entities/file-system-rel-path",
-      "auth": false
+      "endpoint": "/entities/file-system-rel-path"
     },
     {
       "method": "GET",
-      "endpoint": "/entities/<*>",
-      "auth": false
+      "endpoint": "/entities/<*>"
     },
     {
       "method": "POST",
       "endpoint": "/file-commit",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "POST",
       "endpoint": "/file-upload",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "GET",
-      "endpoint": "/has-visualization/<*>",
-      "auth": false
+      "endpoint": "/has-visualization/<*>"
     },
     {
       "method": "DELETE",
       "endpoint": "/has-visualization/<*>/cache",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "GET",
-      "endpoint": "/jobs",
-      "auth": false
+      "endpoint": "/jobs"
     },
     {
       "method": "DELETE",
       "endpoint": "/jobs/flush",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "GET",
-      "endpoint": "/jobs/<*>",
-      "auth": false
+      "endpoint": "/jobs/<*>"
     },
     {
       "method": "DELETE",
       "endpoint": "/jobs/<*>",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "PUT",
       "endpoint": "/jobs/<*>/cancel",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "GET",
-      "endpoint": "/login",
-      "auth": false
+      "endpoint": "/login"
     },
     {
       "method": "GET",
-      "endpoint": "/logout",
-      "auth": false
+      "endpoint": "/logout"
     },
     {
       "method": "POST",
       "endpoint": "/metadata/register",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "POST",
       "endpoint": "/metadata/validate",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "GET",
       "endpoint": "/metadata/data-provider-groups",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "GET",
       "endpoint": "/metadata/provenance-metadata/<*>",
-      "auth": false,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      ,
+      "authorizer": "read"
     },
     {
       "method": "GET",
-      "endpoint": "/privs",
-      "auth": false
-    },
-     {
-      "method": "GET",
-      "endpoint": "/privs/senotype",
-      "auth": false
+      "endpoint": "/privs"
     },
     {
       "method": "GET",
-      "endpoint": "/privs/has-data-admin",
-      "auth": false
+      "endpoint": "/privs/senotype"
     },
     {
       "method": "GET",
-      "endpoint": "/privs/user-write-groups",
-      "auth": false
+      "endpoint": "/privs/has-data-admin"
     },
     {
       "method": "GET",
-      "endpoint": "/privs/<*>/has-write",
-      "auth": false
+      "endpoint": "/privs/user-write-groups"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/privs/<*>/has-write"
     },
     {
       "method": "POST",
       "endpoint": "/publications",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "PUT",
       "endpoint": "/publications/<*>/submit",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "PUT",
       "endpoint": "/reload-assaytypes",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "POST",
       "endpoint": "/samples/bulk/register",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "POST",
       "endpoint": "/samples/bulk/validate",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "GET",
-      "endpoint": "/senotype-library-login",
-      "auth": false
+      "endpoint": "/senotype-library-login"
     },
     {
       "method": "GET",
-      "endpoint": "/senotype-library-logout",
-      "auth": false
+      "endpoint": "/senotype-library-logout"
     },
     {
       "method": "POST",
       "endpoint": "/sources/bulk/register",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "POST",
       "endpoint": "/sources/bulk/validate",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "GET",
-      "endpoint": "/status",
-      "auth": false
+      "endpoint": "/status"
     },
     {
       "method": "GET",
-      "endpoint": "/token-introspect",
-      "auth": false
+      "endpoint": "/token-introspect"
     },
     {
       "method": "POST",
-      "endpoint": "/transfers",
-      "auth": false
+      "endpoint": "/transfers"
     },
     {
       "method": "GET",
-      "endpoint": "/transfers/endpoints",
-      "auth": false
+      "endpoint": "/transfers/endpoints"
     },
     {
       "method": "POST",
       "endpoint": "/uploads",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "GET",
       "endpoint": "/uploads/data-status",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "GET",
-      "endpoint": "/uploads/<*>/file-system-abs-path",
-      "auth": false
+      "endpoint": "/uploads/<*>/file-system-abs-path"
     },
     {
       "method": "PUT",
       "endpoint": "/uploads/<*>/reorganize",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
     },
     {
       "method": "PUT",
       "endpoint": "/uploads/<*>/submit",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "POST",
       "endpoint": "/uploads/validate",
-      "auth": true,
-      "groups": [
-        "51155194-09e5-11ed-a1a7-39992a34a522"
-      ]
+      "authorizer": "read"
     },
     {
       "method": "POST",
-      "endpoint": "/validate-tsv",
-      "auth": false
+      "endpoint": "/validate-tsv"
     },
     {
       "method": "GET",
-      "endpoint": "/vitessce/<*>",
-      "auth": false
+      "endpoint": "/vitessce/<*>"
     },
     {
       "method": "DELETE",
       "endpoint": "/vitessce/<*>/cache",
-      "auth": true,
-      "groups": [
-        "f654cd0d-1d9c-11ed-b7d5-972795fc9504"
-      ]
+      "authorizer": "data-admin"
+    }
+  ],
+  "entity-api": [
+    {
+      "method": "DELETE",
+      "endpoint": "/flush-all-cache",
+      "authorizer": "data-admin"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>/revisions"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/datasets/<*>/revisions"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/dataset/globus-url/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/documents/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/datasets/prov-info"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/collection/redirect/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>/collections"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/entities/dashboard/<*>",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/children/<*>",
+      "authorizer": "read"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/children/<*>",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/type/<*>/instanceof/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/collections"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/parents/<*>"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/parents/<*>"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/entities/multiple-samples/<*>",
+      "authorizer": "create"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/flush-cache/<*>",
+      "authorizer": "data-admin"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/usergroups",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>/provenance"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/next_revisions/<*>",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/datasets/<*>/prov-info"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/dataset/globus-url/<*>"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/datasets/<*>/retract",
+      "authorizer": "data-admin"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entity-types"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>/validation-message",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/collections/<*>",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/doi/redirect/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/ancestors/<*>"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/ancestors/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/entities/<*>",
+      "authorizer": "read"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/entities/<*>",
+      "authorizer": "create"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/samples/prov-info",
+      "authorizer": "read"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/datasets/components",
+      "authorizer": "create"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/descendants/<*>"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/descendants/<*>"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/collections/<*>/add-datasets",
+      "authorizer": "data-admin"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>/tuplets"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/previous_revisions/<*>",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/collections/<*>/entities"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/collections/<*>/entities"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/redirect/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/uploads/<*>/datasets",
+      "authorizer": "read"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/uploads/<*>/datasets",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>/pipeline-message",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>/globus-url"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>/siblings"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/datasets/<*>/sources"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>/uploads"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/status"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/datasets/<*>/samples"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/datasets/<*>/latest-revision"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/_entities/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/datasets/<*>/revision"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/entities/<*>/ancestor-organs"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/datasets/<*>/organs"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/constraints"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/constraints"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    }
+  ],
+  "search-api": [
+    {
+      "method": "GET",
+      "endpoint": "/<*>/search"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/<*>/search"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/param-search/<*>"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/senotypes/reindex/test/<*>",
+      "authorizer": "senotype-edit"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/assaytype/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/<*>/mapping"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/assaytype"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/search"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/search"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/senotypes/reindex-all",
+      "authorizer": "data-admin"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/senotypes/reindex-all/test",
+      "authorizer": "data-admin"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/reindex/<*>",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/status"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/add/<*>",
+      "authorizer": "create"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/senotypes/reindex/<*>",
+      "authorizer": "senotype-edit"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/indices"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/assayname"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/update/<*>",
+      "authorizer": "create"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/mapping"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/<*>/scroll-search"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/reindex-all",
+      "authorizer": "data-admin"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    }
+  ],
+  "senotype-api": [
+    {
+      "method": "GET",
+      "endpoint": "/status"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/senotypes"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/senotypes"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/valuesets"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/senotypes/<*>"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/senotypes/<*>"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/senotypes/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    }
+  ],
+  "uuid-api": [
+    {
+      "method": "GET",
+      "endpoint": "/uuid/<*>/exists",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/uuid/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/status"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/<*>/ancestors"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/uuid"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/file-id/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/hmuuid/<*>"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/hmuuid/<*>/exists",
+      "authorizer": "read"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/hmuuid",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/<*>/files",
+      "authorizer": "read"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/"
+    },
+    {
+      "method": "GET",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "POST",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "PUT",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
+    },
+    {
+      "method": "DELETE",
+      "endpoint": "/<*>",
+      "_comment": "Catch-all - allows Flask to return proper 404 for undefined routes"
     }
   ]
 }
