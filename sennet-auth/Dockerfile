@@ -1,5 +1,5 @@
 # Parent image
-FROM sennet/api-base-image:1.4.0
+FROM sennet/api-base-image:1.4.3
 
 LABEL description="SenNet Authentication and Authorization Service"
 
