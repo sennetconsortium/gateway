@@ -22,11 +22,16 @@ sennet-auth/src/VERSION
 # sennet-auth app.cfg
 sennet-auth/src/instance/app.cfg
 
-#ignore PyCharm files
-.idea/
+# virtual environment
 venv
 
-#ignore Eclipse files
+# ignore PyCharm files
+.idea/
+
+#ignore vscode files
+.vscode/
+
+# ignore Eclipse files
 .project
 .pydevproject
 gateway.code-workspace
