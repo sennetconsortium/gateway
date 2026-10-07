@@ -24,3 +24,4 @@ cd docker
 cd docker
 ./docker-deployment.sh [start|stop|down]
 ```
+<img width="1553" height="1148" alt="sennet-gateway-layout" src="https://github.com/user-attachments/assets/a90d2179-635e-4c5c-b7f9-3d1f8ed0a9b8" />
