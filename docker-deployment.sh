@@ -59,11 +59,11 @@ else
     echo
 
     if [ "$1" = "start" ]; then
-        docker-compose -f docker-compose.yml -f docker-compose.deployment.yml -p gateway up -d
+        docker compose -f docker-compose.yml -f docker-compose.deployment.yml -p gateway up -d
     elif [ "$1" = "stop" ]; then
-        docker-compose -f docker-compose.yml -f docker-compose.deployment.yml -p gateway stop
+        docker compose -f docker-compose.yml -f docker-compose.deployment.yml -p gateway stop
     elif [ "$1" = "down" ]; then
-        docker-compose -f docker-compose.yml -f docker-compose.deployment.yml -p gateway down
+        docker compose -f docker-compose.yml -f docker-compose.deployment.yml -p gateway down
     fi
 fi
 

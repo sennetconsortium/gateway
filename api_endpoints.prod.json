@@ -279,6 +279,11 @@
       "endpoint": "/privs",
       "auth": false
     },
+     {
+      "method": "GET",
+      "endpoint": "/privs/senotype",
+      "auth": false
+    },
     {
       "method": "GET",
       "endpoint": "/privs/has-data-admin",
@@ -335,6 +340,16 @@
       ]
     },
     {
+      "method": "GET",
+      "endpoint": "/senotype-library-login",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/senotype-library-logout",
+      "auth": false
+    },
+    {
       "method": "POST",
       "endpoint": "/sources/bulk/register",
       "auth": true,
@@ -353,6 +368,11 @@
     {
       "method": "GET",
       "endpoint": "/status",
+      "auth": false
+    },
+    {
+      "method": "GET",
+      "endpoint": "/token-introspect",
       "auth": false
     },
     {
