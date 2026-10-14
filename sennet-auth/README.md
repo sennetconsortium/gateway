@@ -42,7 +42,7 @@ Nginx serves as the reverse proxy and passes the requests to the uWSGI server. T
 
 For API auth of the Web Gateway, we'll need a json file named `api_endpoints.json` defined in the `instance/app.cfg` that specifies all the details for matching endpoints. Public endpoints don't require any authentication. However, the private endpoints will require the globus token in the `Authorization` header or the custom `MAuthorization` HTTP header. Certain endpoints that require certain group access will also require the globus group access token. 
 
-Note: this endpoints file will be mounted to the docker container when we spin up the service. The mount point is defined in the docker-compose ymal file based on your environment.
+Note: this endpoints file will be mounted to the docker container when we spin up the service. The mount point is defined in the docker-compose.yml file based on your environment.
 
 When the API client/consumer sends out the `Authorization` HTTP header, a valid token should be used:
 
